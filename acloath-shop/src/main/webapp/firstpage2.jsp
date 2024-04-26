@@ -28,7 +28,15 @@ List<Product> products = pd.getAllProducts();
 
 
 </head>
-<body> 
+<body style="background-image: url('product-images/222.jpg'); background-size:contain ; background-position: center;   " >
+	<%@include file="/includes/navbar.jsp"%>
+	<a href="index.jsp" style="font-family: Arial, sans-serif; margin: 0; padding: 0;  display: flex; justify-content: center; align-items: center; height: 100vh;"><button style="padding: 15px 30px; font-size: 18px; background-color: black; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;" >Shop Now</button></a>
+	
+	
+	
+	
+		<%@include file="/includes/footer.jsp"%>
+	
 	
 
 
