@@ -37,7 +37,12 @@
 		<div class="card-header my-3">All Orders</div>
 		<table class="table table-light">
 			<thead>
-				<tr>
+				<tr><th scope="col">Date</th>
+					<th scope="col">Name</th>
+					<th scope="col">Category</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Price</th>
+					<th scope="col">Cancel</th>
 					
 				</tr>
 			</thead>
