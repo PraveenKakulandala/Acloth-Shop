@@ -1,4 +1,4 @@
-package cn.techtutorial.servlet;
+package tshirtPackage.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
