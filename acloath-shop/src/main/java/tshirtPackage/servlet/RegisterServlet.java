@@ -11,10 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import tshirtPackage.dao.RegisterDao;
 import tshirtPackage.model.UserReg;
 
-/**
- * @email Ramesh Fadatare
- */
-
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -42,7 +38,6 @@ public class RegisterServlet extends HttpServlet {
         try {
             employeeDao.registerEmployee(employee);
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
