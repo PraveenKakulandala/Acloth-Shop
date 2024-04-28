@@ -1,4 +1,5 @@
 <%@page import="tshirtPackage.model.*"%>
+<%@page import="tshirtPackage.dao.*"%>
 <%@page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -17,31 +18,29 @@
 <html>
 <head>
 <%@include file="/includes/head.jsp"%>
-<title>E-Commerce Cart</title>
+<title>ACloth Shop</title>
 </head>
 <body>
 	<%@include file="/includes/navbar.jsp"%>
 
 	<div class="container">
 		<div class="card w-50 mx-auto my-5">
-			<div class="card-header text-center">User Register</div>
+			<div class="card-header text-center">User Login</div>
 			<div class="card-body">
-				<form action="user-register" method="post">
+				<form action="register" method="post">
 					<div class="form-group">
-						<label>Name</label> 
-						<input type="email" name="login-name" class="form-control" placeholder="Enter Name">
-					</div>
-					<div class="form-group">
-						<label>Email</label> 
-						<input type="email" name="login-password" class="form-control" placeholder="Enter Email">
+						<label>Email address</label> 
+						<input type="email" name="login-email" class="form-control" placeholder="Enter email">
 					</div>
 					<div class="form-group">
 						<label>Password</label> 
-						<input type="email" name="login-password" class="form-control" placeholder="Enter Password">
+						<input type="password" name="login-password" class="form-control" placeholder="Password">
 					</div>
 					<div class="text-center">
-						<button type="submit" class="btn btn-dark">Register</button>
+						<button type="submit" class="btn btn-dark">Login</button><br>
 					</div>
+					
+					<br><div class= text-center >Please <a href="Rgistration.jsp">Register</a> before login.</div>
 				</form>
 			</div>
 		</div>
