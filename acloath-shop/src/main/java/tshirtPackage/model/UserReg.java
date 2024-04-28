@@ -1,62 +1,51 @@
 package tshirtPackage.model;
 
-public class UserReg {
-	int id;
-    String name;
-    String email;
-    String password;
+import java.io.Serializable;
 
-    public void User() {
-    }
+/**
+ * JavaBean class used in jsp action tags.
+ * @author Ramesh Fadatare
+ */
+public class reg implements Serializable {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+	private int id;
+	private String name;
+	private String email;
+	private String password;
+	
+	public int getId() {
+		return id;
+	}
 
-    public void User(int id, String name, String email, String password) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-    }
+	public void setId(int id ) {
+		this.id = id;
+	}
 
-    public void User(String name, String email, String password) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void User(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public int getId() {
-        return id;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
     
 }
