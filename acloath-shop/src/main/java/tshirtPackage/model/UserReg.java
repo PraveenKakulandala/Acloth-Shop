@@ -2,11 +2,8 @@ package tshirtPackage.model;
 
 import java.io.Serializable;
 
-/**
- * JavaBean class used in jsp action tags.
- * @author Ramesh Fadatare
- */
-public class reg implements Serializable {
+
+public class UserReg implements Serializable {
     /**
      * 
      */

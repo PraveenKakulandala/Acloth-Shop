@@ -9,10 +9,10 @@ import tshirtPackage.model.UserReg;
 
 public class RegisterDao {
 
-    public int registerEmployee(UserReg employee) throws ClassNotFoundException {
-        String INSERT_USERS_SQL = "INSERT INTO users" +
-            "  (id, name, email, password) VALUES " +
-            " (?, ?, ?, ?);";
+	 public int registerEmployee(UserReg employee) throws ClassNotFoundException {
+	        String INSERT_USERS_SQL = "INSERT INTO users" +
+	            "  (id, name, email, password) VALUES " +
+	            " (?, ?, ?, ?);";
 
         int result = 0;
 
@@ -48,6 +48,6 @@ public class RegisterDao {
                     t = t.getCause();
                 }
             }
-        }
-    }
+        }
+    }
 }
