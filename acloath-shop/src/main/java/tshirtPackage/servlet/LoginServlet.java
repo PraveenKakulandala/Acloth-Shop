@@ -10,10 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 import tshirtPackage.connection.DbCon;
-
-
+import tshirtPackage.dao.*;
+import tshirtPackage.model.*;
 
 @WebServlet("/user-login")
 public class LoginServlet extends HttpServlet {
