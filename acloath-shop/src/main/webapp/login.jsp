@@ -36,8 +36,10 @@
 						<input type="password" name="login-password" class="form-control" placeholder="Password">
 					</div>
 					<div class="text-center">
-						<button type="submit" class="btn btn-dark">Login</button>
+						<button type="submit" class="btn btn-dark">Login</button><br>
 					</div>
+					
+					<br><div class= text-center >Please <a href="Rgistration.jsp">Register</a> before login.</div>
 				</form>
 			</div>
 		</div>
