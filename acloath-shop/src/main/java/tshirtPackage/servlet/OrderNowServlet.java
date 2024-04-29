@@ -3,8 +3,10 @@ package tshirtPackage.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
-import java.util.*;
 import java.text.SimpleDateFormat;
+
+import java.util.ArrayList;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,8 +15,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import tshirtPackage.connection.DbCon;
-import tshirtPackage.dao.*;
-import tshirtPackage.model.*;
+import tshirtPackage.dao.OrderDao;
+import tshirtPackage.model.Cart;
+import tshirtPackage.model.Order;
+import tshirtPackage.model.User;
 
 
 @WebServlet("/order-now")
@@ -48,7 +52,7 @@ public class OrderNowServlet extends HttpServlet {
 	                    ArrayList<Cart> cart_list = (ArrayList<Cart>) request.getSession().getAttribute("cart-list");
 	                    if (cart_list != null) {
 	                        for (Cart c : cart_list) {
-	                            if (c.getId() == Integer.parseInt(productId)) {
+	                        	if (c.getId() == Integer.parseInt(productId)) {
 	                                cart_list.remove(cart_list.indexOf(c));
 	                                break;
 	                            }
