@@ -2,6 +2,7 @@ package tshirtPackage.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import tshirtPackage.model.*;
+import tshirtPackage.model.Cart;
 
 
 @WebServlet(name = "AddToCartServlet", urlPatterns = "/add-to-cart")
