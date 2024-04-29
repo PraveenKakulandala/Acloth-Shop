@@ -11,36 +11,34 @@ import javax.servlet.http.HttpServletResponse;
 import tshirtPackage.dao.RegisterDao;
 import tshirtPackage.model.UserReg;
 
-@WebServlet("/register")
+@WebServlet("/RegisterServlet")
 public class RegisterServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-    private RegisterDao employeeDao;
+	private static final long serialVersionUID = 1L;
+	private RegisterDao employeeDao;
 
-    public void init() {
-        employeeDao = new RegisterDao();
-    }
+	public void init() {
+		employeeDao = new RegisterDao();
+	}
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
-     
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-    
-        UserReg employee = new UserReg();
-        employee.setId(0);
-        employee.setName(name);
-        employee.setEmail(email);
-        employee.setPassword(password);
-     
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
 
-        try {
-            employeeDao.registerEmployee(employee);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+		UserReg employee = new UserReg();
+		employee.setId(0);
+		employee.setName(name);
+		employee.setEmail(email);
+		employee.setPassword(password);
 
-        response.sendRedirect("login.jsp");
-    }
+		try {
+			employeeDao.registerEmployee(employee);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		response.sendRedirect("login.jsp");
+	}
 }
