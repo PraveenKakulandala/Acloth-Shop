@@ -1,5 +1,5 @@
 <%@page import="tshirtPackage.connection.DbCon"%>
-<%@page import="tshirtPackage.dao.ProductDao"%>
+<%@page import="tshirtPackage.dao.*"%>
 <%@page import="tshirtPackage.model.*"%>
 <%@page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -28,7 +28,7 @@ if (cart_list != null) {
 	<%@include file="/includes/navbar.jsp"%>
 
 	<div class="container" >
-		<div class="card-header my-3"style="background-color:black ; color: ash;"><h5>All Products</h5></div>
+		<div class="card-header my-3"style="background-color:white ; color: gray;"><h5>All Products</h5></div>
 		<div class="row">
 			<%
 			if (!products.isEmpty()) {
