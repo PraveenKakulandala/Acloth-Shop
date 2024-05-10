@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import tshirtPackage.model.Cart;
 
 @WebServlet("/quantity-inc-dec")
-public class QuantitylncDecServlet extends HttpServlet {
+public class QuantityIncDecServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
